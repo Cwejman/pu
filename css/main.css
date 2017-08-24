@@ -11,13 +11,24 @@
   .background {
     background-attachment: scroll !important;
   }
+  .content {
+    padding: 80px 25px !important;
+  }
   #main-logo {
     width: 80vw !important;
   }
   #main {
     height: 80vh !important;
   }
-
+  .contact-office-city {
+    margin: 20px 0 !important;
+  }
+  .contact-office-city > iframe {
+    border-radius: 3px !important;
+  }
+  #information > .content {
+    padding: 0 40px 40px !important;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -225,7 +236,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url(../res/images/a.png);
+  background-image: url(../res/images/1.jpg);
   background-position: center;
 }
 
