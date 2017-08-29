@@ -438,6 +438,7 @@ a:hover {
   /*transform: rotate(90deg);*/
   border-radius: 50%;
   z-index: -10;
+  flex-shrink: 0;
 }
 
 .about-people-number {
