@@ -219,7 +219,7 @@ a:hover {
 
 .content {
   padding: 80px 40px;
-  max-width: 873px;
+  max-width: 980px;
   margin: auto;
 }
 
@@ -499,6 +499,7 @@ a:hover {
 
 .contact-office-city {
   width: 80vw;
+  cursor: pointer;
   max-width: 255px;
   margin: 20px 20px;
   -webkit-box-flex: 1;
@@ -539,6 +540,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 2px;
+  font-size: 14px;
+  max-width: 300px;
   /*padding-right: 12px;*/
 }
 
