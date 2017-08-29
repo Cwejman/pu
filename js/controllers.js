@@ -20,8 +20,11 @@ angular.module('controllers', [])
   }
 
   $scope.scroll = function() {
+    
+    var y = $window.scrollY || document.documentElement.scrollTop
+    var h = $window.innerHeight || Math.max(document.documentElement.clientHeight, document.body.clientHeight)
 
-    if ($window.scrollY > $window.innerHeight - 66)
+    if (y > h - 66)
       $scope.down = true
     else
       $scope.down = false
@@ -51,7 +54,10 @@ angular.module('controllers', [])
 
   angular.element($window).bind('scroll', function() {
 
-    $scope.degrees = (($window.scrollY / $window.innerHeight - 0.3) ) * 720
+    var y = $window.scrollY || document.documentElement.scrollTop
+    var h = $window.innerHeight || Math.max(document.documentElement.clientHeight, document.body.clientHeight)
+    
+    $scope.degrees = ((y / h - 0.3) ) * 720
 
     if ( $scope.degrees < 0 ) $scope.degrees = 0
     if ( $scope.degrees > 180 ) $scope.degrees = 180
