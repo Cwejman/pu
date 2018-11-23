@@ -568,8 +568,9 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   bottom: 0;
-  background-color: #262626;
+  background-color: rgb(248, 248, 248);
   color: white;
   text-align: center;
-  height: 150px;
+  height: 64px;
+  width: 100%;
 }

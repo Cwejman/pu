@@ -1,4 +1,6 @@
-angular.module('antitheft', ['ui.router', 'controllers', 'services', 'duScroll'])
+console.log('jaaa!!')
+
+angular.module('pu', ['ui.router', 'controllers', 'services', 'duScroll'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
 
@@ -37,23 +39,3 @@ angular.module('antitheft', ['ui.router', 'controllers', 'services', 'duScroll']
   $urlRouterProvider.otherwise('/web')
 
 })
-
-// angular.element(document).ready(function () {
-//
-//   $(window).scroll(function () {
-//     $('.r').each(function (i) {
-//
-//       console.log(i)
-//
-//         var bottom_of_object = $(this).position().top + $(this).outerHeight();
-//         var bottom_of_window = $(window).scrollTop() + $(window).height() * 0.7;
-//
-//         /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
-//         // bottom_of_window = bottom_of_window - $(window).height() * 0.6;
-//
-//         if( bottom_of_window > bottom_of_object ) $(this).animate({'opacity':'1'}, 500)
-//
-//     })
-//   })
-//
-// })
